@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Subkal - Penghitung Subnet</title>
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+	<link rel="stylesheet" href="assets/main.css">
+	<link rel="icon" type="image/png" href="assets/icon-512.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#000000">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="card min-height">
+			<div class="title">
+				<h1>Subkal<span>v1.0</span></h1>
+				<p>Subnet Kalkulator | IPv4 | Class C</p>
+			</div>
+			<form class="input" method="post">
+				<div class="ip">
+					<label for="ip">Alamat IP</label>
+						<div>
+							<input type="text" id="ip" name="ip" minlength="7" maxlength="15" value="192.168.0.0" autofocus>
+							<span>/</span>
+						</div>
+				</div>
+				<div class="prefix">
+					<label for="prefix">Prefix</label>
+					<input type="number" id="prefix" name="prefix" min="24" max="31" value="28">
+				</div>
+				<div class="tombol">
+					<button id="hitung">HITUNG</button>
+				</div>
+			</form>
+			<div class="info">
+				<table>
+					<tr>
+						<th>Netmask</th>
+						<td id="netmask"></td>
+					</tr>
+					<tr>
+						<th>Jumlah IP</th>
+						<td id="jumlahIp"></td>
+					</tr>
+					<tr>
+						<th>Jumlah Host</th>
+						<td id="jumlahHost"></td>
+					</tr>
+					<tr>
+						<th>Jumlah Blok</th>
+						<td id="jumlahBlok"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="blok-nav">
+			</div>
+			<div class="iplist">
+			</div>
+		</div>
+		<p class="copyrights" title="dibuat pada 13 Jan 2020 - 02 Februari 2020">dibuat dengan <span>&hearts;</span> oleh <a href="https://wa.me/6285362020511">Menta</a></p>
+		<a href="#" class="up-btn" title="Pergi ke Atas">▲</a>
+	</div>
+
+	<script src="assets/main.js"></script>
+</body>
+</html>
